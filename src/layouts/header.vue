@@ -40,7 +40,6 @@ const toIndex=()=>{
 }
 const openDialog=()=>{
     dialogShow.value=true
-    console.log(dialogShow);
 }
 const toOriginproject=()=>{
     window.open('https://github.com/shuiRong/VueCnodeJS')
