@@ -8,7 +8,7 @@ export function requestParams(method:string,token:string){
         'Access-Control-Allow-Origin':'*'
     },
     onResponse({request,response,options}:any){
-        if (response.code!=200) {
+        if (response.status!=200) {
             ElMessage.error({
                 message:'Error',
                 type:'error'
