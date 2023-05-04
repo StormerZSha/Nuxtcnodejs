@@ -1,4 +1,4 @@
-export {articleType}
+export {articleType,authorType,userinfoType}
 interface articleType{
     id:string,
     author_id:string,
@@ -17,4 +17,21 @@ interface articleType{
 interface authorType{
     loginname:string,
     avatar_url:string
+}
+
+interface userinfoType{
+    avatar_url:string,
+    create_at:string,
+    githubUsername:string,
+    loginname:string,
+    recent_replies:Array<recentType>,
+    recent_topic:Array<recentType>,
+    score:number
+}
+
+interface recentType{
+    author:authorType,
+    id:string,
+    last_reply_at:string,
+    title:string
 }

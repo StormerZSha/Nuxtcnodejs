@@ -28,7 +28,7 @@
     </div>
 </template>
 <script setup>
-import cnodejsvg from '~/asssets/cnodejs.svg'
+import cnodejsvg from '~/assets/cnodejs.svg'
 
 import {useRoute,useRouter} from 'vue-router'
 const route=useRoute()
