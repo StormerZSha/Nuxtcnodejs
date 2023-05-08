@@ -13,3 +13,10 @@ export const getUser=async(params:{loginname:string})=>{
         ...requestOptions
     })
 }
+
+export const getCurrentTopic=async(params:{id:string})=>{
+    const requestOptions:any=requestParams('get','')
+    return await useFetch(`/api/v1/topic/${params.id}`,{
+        ...requestOptions
+    })
+}

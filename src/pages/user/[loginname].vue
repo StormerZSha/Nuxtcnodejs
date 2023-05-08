@@ -2,7 +2,7 @@
     <div class="secDiv">
         <div class="profile" v-loading="loading">
             <div class="msg">
-                <img src="" :alt="useindex.currentUser?.loginname"/>
+                <img :src="useindex.currentUser?.avatar_url" :alt="useindex.currentUser?.loginname"/>
                 <span>{{ useindex.currentUser?.loginname }}</span>
             </div>
             <div class="score">
@@ -67,9 +67,7 @@ const getUserData=async()=>{
     const res=await getUser({loginname:route.path.slice(6)})
     let data=res.data.value as{data:any,code:number}
     useindex.setCurrentuser(data.data)
-    loading.value=false
-    console.log(useindex.currentUser?.loginname);
-    
+    loading.value=false 
 }
 
 const toUser=(item:any)=>{

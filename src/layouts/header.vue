@@ -19,7 +19,7 @@
                             <li>Vue3</li>
                             <li>Nuxt3</li>
                             <li>Pinia</li>
-                            <li>...</li>
+                            <li>Cnodejs API</li>
                         </ul>
                     </div>
                 </div>

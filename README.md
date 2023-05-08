@@ -1,42 +1,11 @@
-# Nuxt 3 Minimal Starter
+# Nuxtcnodejs
+> 一个在看完Nuxtjs文档后尝试实践的项目，想法来源于[**这个项目**](https://github.com/shuiRong/VueCnodeJS)，基本是只使用了vue3,Nuxtjs3
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
+### 本地运行
 
 ```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
+git clone https://github.com/StormerZSha/Nuxtcnodejs.git
+cd Nuxtcnodejs
+pnpm install/npm install
+pnpm run dev/npm run dev 
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

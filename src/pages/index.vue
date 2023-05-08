@@ -2,8 +2,7 @@
     <div class="secDiv" v-loading="loading">
         <div v-for="item in useindex.articleLists.data" :key="item.id">
             <div class="imgDiv">
-                <!-- <img :src="item.author.avatar_url" :title="item.author.loginname"/> -->
-                <img :src="1" :title="item.author.loginname" @click="toUser(item)"/>
+                <img :src="item.author.avatar_url" :title="item.author.loginname"  @click="toUser(item)"/>
             </div>
             <div class="textDiv">
                 <div @click="toTopic(item)">{{ item.title }}</div>

@@ -1,4 +1,4 @@
-export {articleType,authorType,userinfoType}
+export {articleType,authorType,userinfoType,currenttopicType}
 interface articleType{
     id:string,
     author_id:string,
@@ -34,4 +34,30 @@ interface recentType{
     id:string,
     last_reply_at:string,
     title:string
+}
+
+interface currenttopicType{
+    author:authorType,
+    author_id:string,
+    content:string,
+    create_at:string,
+    good:boolean,
+    id:string,
+    is_collect:boolean,
+    last_reply_at:string,
+    replies:Array<replyType>,
+    reply_count:number,
+    tab:string,
+    title:string,
+    top:boolean,
+    visit_count:number
+}
+interface replyType{
+    author:authorType,
+    content:string,
+    create_at:string,
+    id:string,
+    is_uped:false,
+    reply_id:null,
+    ups:Array<string>,
 }
